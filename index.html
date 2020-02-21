@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Poppins&display=swap" rel="stylesheet">
+
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="nav" href="#">Coding Quiz</a> 
+        <ul class="nav justify-content-end">
+            <a class="nav-link" id="score" href="highscores.html">View Highscores</a>
+            <a class="nav-link" id="timer">Time: <span id="time">0</span></a>
+        </ul>
+       </div>
+    </nav>
+    <div class="wrapper">
+     <div class="container-fluid">
+       <div class="card h-50 text-center" id="start-screen">
+         <img src="https://media.istockphoto.com/vectors/quiz-card-with-colorful-confetti-vector-id1026464348" class="card-img-top" alt="quiz image">
+         <div class="card-body start">
+           <h5 class="card-title">Coding Quiz Challenge</h5>
+           <p class="card-text"> Try to answer the following code-related questions within the time
+           limit. Keep in mind that incorrect answers will penalize your
+           score/time by ten seconds!</p>
+           <button type="button" id="start" class="btn  btn-lg btn-primary">Start Quiz</button>
+          </div>
+        </div>
+
+     
+        <div id="questions" class="hide">
+          <h2 id="question-title"></h2>
+          <div id="choices" class="choices"></div>
+        </div>
+
+        <div id="end-screen" class="hide">
+          <h2>All done!</h2>
+          <p>Your final score is <span id="final-score"></span>.</p>
+          <p>
+            Enter initials: <input type="text" id="initials" max="3" />
+            <button id="submit" class="btn  btn-lg btn-primary">Submit</button>
+          </p>
+        </div>
+
+        <div id="feedback" class="feedback hide"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="questions.js"></script>
+    <script src="logic.js"></script>
+  </body>
+</html>

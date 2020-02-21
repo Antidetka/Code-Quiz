@@ -1,0 +1,97 @@
+nav {
+  font-family: 'Poppins';
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+a {
+  color: #563d7c;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+a:hover {
+  color: blue;
+}
+
+.questions {
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+.choices button {
+  display: block;
+}
+
+.choices {
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+#choices {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  }
+
+input[type="text"] {
+  font-size: 100%;
+}
+
+ol {
+  padding-left: 0px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+li {
+  padding: 5px;
+  list-style: decimal inside none;
+}
+
+.wrapper {
+  margin: 50px auto 0 auto;
+  max-width: 600px;
+}
+
+.hide {
+  display: none;
+}
+
+.start {
+  text-align: center;
+}
+
+.scores {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.feedback {
+  font-family: "Poppins";
+  font-style: italic;
+  font-size: 120%;
+  margin-top: 20px;
+  padding-top: 10px;
+  color:blue;
+  border-top: 2px solid yellow;
+}
+
+#end-screen {
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.timer {
+  float: right;
+  top: 10px;
+  right: 10px;
+}
